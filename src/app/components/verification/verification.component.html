@@ -1,0 +1,36 @@
+<div class="card">
+    <h3>Do you already have a CV</h3>
+    <div class="grid">
+        <div class="col-5 flex align-items-center justify-content-center">
+            <form (ngsubmit)="Submit()">
+            <div class="p-fluid">
+                    <div class="field">
+                        <label for="username">Username</label>
+                        <input pInputText id="username" type="text" >
+                    </div>
+                    <div class="field">
+                        <label for="password">Password</label>
+                        <input pInputText id="password" type="password" >
+                    </div>
+                    <button type="submit" pButton  label="Login"></button>
+              
+            </div>
+        </form>
+
+        </div>
+        <div class="col-2">
+            <p-divider layout="vertical">
+                <b>OR</b>
+            </p-divider>
+        </div>
+        <div class="col-5 flex align-items-center justify-content-center">
+            <!-- <p-button label="Sign Up & Create CV" icon="pi pi-user-plus" styleClass="p-button-success"></p-button> -->
+            <a routerLink="/createCV">Sign Up & Create CV</a>
+        </div>
+        
+    </div>
+</div>
+<!-- <span class="p-float-label">
+    <input id="in_title" type="text" [(ngModel)]="title">
+    <button type="button" pButton label="PrimeNG"></button>
+</span> -->

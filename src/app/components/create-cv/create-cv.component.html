@@ -1,0 +1,87 @@
+<div class="container">
+<div class="">   
+    <div class="field col-12 md:col-4">
+        <div class="p-inputgroup">
+            <span class="p-inputgroup-addon">
+                <i class="pi pi-user"></i>
+            </span>
+            <span class="p-float-label">
+                <input type="text" id="UserName" [(ngModel)]="value7"> 
+                <label for="UserName">UserName</label>
+            </span>
+        </div>
+    </div><br>
+    <div class="field p-float-label">    
+        <input pInputText id="password" type="password" >
+        <label for="password">Password</label>
+    </div><br>
+    <div class="field col-10 md:col-3">
+        <label for="minmax-buttons">Your Age</label>
+        <p-inputNumber [(ngModel)]="val" mode="decimal" [showButtons]="true" inputId="minmax-buttons" [min]="0" [max]="100">
+        </p-inputNumber>
+    </div>
+    <br>
+    <div class="persoInfo">
+    <h3>Your Personal information </h3>
+    <div class="grid p-fluid">
+        <div class="col-12 md:col-4">
+            <div class="p-inputgroup">
+                <span class="p-inputgroup-addon"><i class="pi pi-map"></i></span>
+                <input type="text" pInputText placeholder="Location">         
+            </div>
+        </div>
+        <div class="col-12 md:col-4">
+            <div class="p-inputgroup">
+                <span class="p-inputgroup-addon"><i class="pi pi-phone"></i></span>
+                <input type="text" pInputText placeholder="Phone .. ">         
+            </div>
+        </div>
+        <div class="p-inputgroup col-12 md:col-4 p-float-label">
+            <label for="icon">Date of Birth</label>
+            <p-calendar [(ngModel)]="date1" [showIcon]="true" inputId="icon"></p-calendar>
+        </div>
+    
+                
+        <div class="col-12 md:col-4">
+            <div class="p-inputgroup">
+                <span class="p-inputgroup-addon">www</span>
+                <input type="text" pInputText placeholder="Website">      
+            </div>
+        </div>
+    </div>
+    <div class="col-12 md:col-4">
+        <div class="p-inputgroup">
+            <span class="p-inputgroup-addon"><i class="pi pi-google"></i></span>
+            <input type="text" pInputText placeholder="Email">         
+        </div>
+    </div>
+</div>
+<div class="color">
+    <h3>Chose theme color</h3><br>
+    <p-colorPicker [(ngModel)]="color" [inline]="true"></p-colorPicker>
+</div>  
+<div class="account">
+<div class="grid p-fluid">
+    <div class="col-12 md:col-4">
+        <div class="p-inputgroup">
+            <span class="p-inputgroup-addon"><i class="pi pi-prime"></i></span>
+            <input type="text" pInputText placeholder="stack-over-flow here">         
+        </div>
+    </div>
+    <div class="col-12 md:col-4">
+        <div class="p-inputgroup">
+            <span class="p-inputgroup-addon"><i class="pi pi-linkedin"></i></span>
+            <input type="text" pInputText placeholder="linkedin account here">         
+        </div>
+    </div>
+    <div class="col-12 md:col-4">
+        <div class="p-inputgroup">
+            <span class="p-inputgroup-addon"><i class="pi pi-github"></i></span>
+            <input type="text" pInputText placeholder="">         
+        </div>
+    </div>
+
+    <button type="submit" pButton routerLink="/home" class="col-4" label="Can Start"></button>
+ 
+</div>
+</div>
